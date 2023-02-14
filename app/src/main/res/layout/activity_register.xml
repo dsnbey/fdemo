@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/regIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regIcon" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsername"
+        app:layout_constraintStart_toStartOf="@+id/edtUsername"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edtLEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edtLPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/edtLEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtLEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtLEmail"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtLPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtLPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtLPassword"
+        app:layout_constraintVertical_bias="0.476"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a user? Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogLogin"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
